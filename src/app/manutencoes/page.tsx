@@ -6,137 +6,136 @@ import { FcHighPriority } from "react-icons/fc";
 import { CustomDialog } from "../components/dialog";
 import { FaEdit, FaTrash, FaCheck } from "react-icons/fa";
 
-
 export default function ManutencaoPage() {
   const cards = [
     {
       color: "border bg-gray-300",
       maintenance_id: "1",
-      text: "Torno Mecânico",
-      reason: "Quebrou a placa",
+      text: "Allianz Parque",
+      reason: "Problema na iluminação",
       icon: <FcHighPriority size={48} />,
-      description: "Detalhes da manutenção do Torno Mecânico.",
-      person: "Diego",
+      description: "Detalhes da manutenção do Allianz Parque.",
+      person: "Dudu",
       priority: "Média",
-      equip: "Equipe A",
+      equip: "Equipe Verdão",
       status: "Pendente",
       date: "02/08/2024",
     },
     {
       color: "border bg-gray-300",
       maintenance_id: "2",
-      text: "Torno CNC",
-      reason: "Quebrou a placa",
+      text: "Centro de Treinamento",
+      reason: "Quebra de equipamento",
       icon: <FcHighPriority size={48} />,
-      description: "Detalhes da manutenção do Torno CNC.",
-      person: "Diego",
-      priority: "Média",
+      description: "Detalhes da manutenção do Centro de Treinamento.",
+      person: "Endrick",
+      priority: "Alta",
       status: "Pendente",
-      equip: "Equipe A",
+      equip: "Equipe Verdão",
       date: "02/08/2024",
     },
     {
       color: "border bg-gray-300",
       maintenance_id: "3",
-      reason: "Quebrou a placa",
-      text: "Sala de automação",
+      reason: "Falha no sistema de som",
+      text: "Academia de Futebol",
       icon: <FcHighPriority size={48} />,
-      description: "Detalhes da manutenção da Sala de automação.",
-      person: "Diego",
+      description: "Detalhes da manutenção da Academia de Futebol.",
+      person: "Rony",
       priority: "Média",
       status: "Pendente",
-      equip: "Equipe A",
+      equip: "Equipe Verdão",
       date: "02/08/2024",
     },
     {
       color: "border bg-gray-300",
       maintenance_id: "4",
-      reason: "Quebrou a placa",
-      text: "Auditório",
+      reason: "Problema no sistema de ar condicionado",
+      text: "Estádio Palestra Itália",
       icon: <FcHighPriority size={48} />,
-      description: "Detalhes da manutenção do Auditório.",
-      person: "Aguinaldo",
-      priority: "Média",
+      description: "Detalhes da manutenção do Estádio Palestra Itália.",
+      person: "Gómez",
+      priority: "Alta",
       status: "Pendente",
-      equip: "Equipe A",
+      equip: "Equipe Verdão",
       date: "02/08/2024",
     },
     {
       color: "border bg-gray-300",
       maintenance_id: "5",
-      reason: "Quebrou a placa",
-      text: "Auditório",
+      reason: "Problema na irrigação do campo",
+      text: "Estádio Palestra Itália",
       icon: <FcHighPriority size={48} />,
-      description: "Detalhes da manutenção do Auditório.",
-      person: "Aguinaldo",
-      priority: "Média",
+      description: "Detalhes da manutenção do Estádio Palestra Itália.",
+      person: "Gómez",
+      priority: "Alta",
       status: "Pendente",
-      equip: "Equipe A",
+      equip: "Equipe Verdão",
       date: "02/08/2024",
     },
     {
       color: "border bg-gray-300",
       maintenance_id: "6",
-      reason: "Quebrou a placa",
-      text: "Auditório",
+      reason: "Problema na pintura",
+      text: "Centro de Excelência",
       icon: <FcHighPriority size={48} />,
-      description: "Detalhes da manutenção do Auditório.",
-      person: "Aguinaldo",
+      description: "Detalhes da manutenção do Centro de Excelência.",
+      person: "Veiga",
       priority: "Média",
       status: "Pendente",
-      equip: "Equipe A",
+      equip: "Equipe Verdão",
       date: "02/08/2024",
     },
     {
       color: "border bg-gray-300",
       maintenance_id: "7",
-      reason: "Quebrou a placa",
-      text: "Auditório",
+      reason: "Reparo nos refletores",
+      text: "Allianz Parque",
       icon: <FcHighPriority size={48} />,
-      description: "Detalhes da manutenção do Auditório.",
-      person: "Aguinaldo",
+      description: "Detalhes da manutenção do Allianz Parque.",
+      person: "Zé Rafael",
       priority: "Média",
       status: "Pendente",
-      equip: "Equipe A",
+      equip: "Equipe Verdão",
       date: "02/08/2024",
     },
     {
       color: "border bg-gray-300",
       maintenance_id: "8",
-      reason: "Quebrou a placa",
-      text: "Auditório",
+      reason: "Reparo na estrutura",
+      text: "Academia de Futebol",
       icon: <FcHighPriority size={48} />,
-      description: "Detalhes da manutenção do Auditório.",
-      person: "Aguinaldo",
-      priority: "Média",
+      description: "Detalhes da manutenção da Academia de Futebol.",
+      person: "Murilo",
+      priority: "Alta",
       status: "Pendente",
-      equip: "Equipe A",
+      equip: "Equipe Verdão",
       date: "02/08/2024",
     },
     {
       color: "border bg-gray-300",
       maintenance_id: "9",
-      reason: "Quebrou a placa",
-      text: "Auditório",
+      reason: "Reparo no sistema de irrigação",
+      text: "Centro de Treinamento",
       icon: <FcHighPriority size={48} />,
-      description: "Detalhes da manutenção do Auditório.",
-      person: "Aguinaldo",
+      description: "Detalhes da manutenção do Centro de Treinamento.",
+      person: "Piquerez",
       priority: "Média",
       status: "Em andamento",
-      equip: "Equipe A",
+      equip: "Equipe Verdão",
       date: "02/08/2024",
     },
     {
       color: "border bg-gray-300",
       maintenance_id: "12",
-      reason: "Quebrou a placa",
-      text: "Auditório",
+      reason: "Reparo nos vestiários",
+      text: "Allianz Parque",
       icon: <FcHighPriority size={48} />,
-      description: "Detalhes da manutenção do Auditório.",
-      person: "Aguinaldo",
-      priority: "Média",
+      description: "Detalhes da manutenção do Allianz Parque.",
+      person: "Abel Ferreira",
+      priority: "Alta",
       status: "Pendente",
-      equip: "Equipe A",
+      equip: "Equipe Verdão",
       date: "02/08/2024",
     },
   ];
@@ -145,27 +144,27 @@ export default function ManutencaoPage() {
     {
       color: "border bg-gray-300",
       maintenance_id: "10",
-      reason: "Quebrou a placa",
-      text: "Auditório",
+      reason: "Problema resolvido",
+      text: "Estádio Palestra Itália",
       icon: <FcHighPriority size={48} />,
-      description: "Detalhes da manutenção do Auditório.",
-      person: "Aguinaldo",
-      priority: "Média",
+      description: "Detalhes da manutenção do Estádio Palestra Itália.",
+      person: "Abel Ferreira",
+      priority: "Alta",
       status: "Concluída",
-      equip: "Equipe A",
+      equip: "Equipe Verdão",
       date: "02/08/2024",
     },
     {
       color: "border bg-gray-300",
       maintenance_id: "11",
-      reason: "Quebrou a placa",
-      text: "Auditório",
+      reason: "Manutenção cancelada",
+      text: "Centro de Treinamento",
       icon: <FcHighPriority size={48} />,
-      description: "Detalhes da manutenção do Auditório.",
-      person: "Aguinaldo",
+      description: "Detalhes da manutenção do Centro de Treinamento.",
+      person: "Gómez",
       priority: "Média",
       status: "Cancelada",
-      equip: "Equipe A",
+      equip: "Equipe Verdão",
       date: "02/08/2024",
     },
   ];
@@ -199,9 +198,9 @@ export default function ManutencaoPage() {
   ];
 
   const EquipOptions = [
-    { value: "equipe_a", label: "Equipe A" },
-    { value: "equipe_b", label: "Equipe B" },
-    { value: "equipe_c", label: "Equipe C" },
+    { value: "equipe_verdao", label: "Equipe Verdão" },
+    { value: "equipe_palestra", label: "Equipe Palestra" },
+    { value: "equipe_academia", label: "Equipe Academia" },
   ];
 
   const columns = [
@@ -234,320 +233,28 @@ export default function ManutencaoPage() {
   }));
 
   return (
-      <div className="h-screen flex flex-col">
-        <div className="flex-1 flex">
-          <Aside />
-          <main className="flex-1 flex flex-col p-6 bg-background w-full">
-            <div className="flex items-center justify-between p-4 rounded-md mb-6">
-              <h1 className="text-4xl font-bold uppercase text-foreground">
-                Manutenções
-              </h1>
-              
+    <div className="h-screen flex flex-col">
+      <div className="flex-1 flex">
+        <Aside />
+        <main className="flex-1 flex flex-col p-6 bg-background w-full">
+          <div className="flex items-center justify-between p-4 rounded-md mb-6">
+            <h1 className="text-4xl font-bold uppercase text-foreground">
+              Manutenções
+            </h1>
+          </div>
+          <div className="rounded-md container mx-auto p-4 bg-background w-full">
+            <div className="text-2xl font-bold text-foreground mb-4">
+              Histórico de Manutenções
             </div>
-            <div className="rounded-md container mx-auto p-4 bg-background w-full">
-              <div className="text-2xl font-bold text-foreground mb-2 flex justify-between">
-                <h1>Manutenções</h1>
-                <CustomDialog
-                  triggerLabel="Nova ocorrência de manutenção"
-                  title="Detalhes da Manutenção"
-                  TypeButton="Criar"
-                  description="Veja os detalhes da manutenção selecionada!"
-                  fields={[
-                    {
-                      id: "maintenance_id",
-                      label: "ID da Manutenção",
-                      type: "text",
-                      defaultValue: "",
-                    },
-                    {
-                      id: "description",
-                      label: "Descrição",
-                      type: "text",
-                      defaultValue: "",
-                    },
-                    {
-                      id: "status",
-                      label: "Status",
-                      type: "select",
-                      defaultValue: "",
-                      options: statusOptions,
-                    },
-                    {
-                      id: "priority",
-                      label: "Prioridade",
-                      type: "select",
-                      defaultValue: "",
-                      options: PriorityOptions,
-                    },
-                    {
-                      id: "responsible",
-                      label: "Solicitante",
-                      type: "text",
-                      defaultValue: "",
-                    },
-                    {
-                      id: "date",
-                      label: "Data da manutenção",
-                      type: "date",
-                      defaultValue: "",
-                    },
-                    {
-                      id: "equip",
-                      label: "Equipe de manutenção",
-                      type: "select",
-                      defaultValue: "",
-                      options: EquipOptions,
-                    },
-                  ]}
-                />
-              </div>
-              <div className="grid grid-cols-1 gap-2 max-h-80 w-full overflow-y-auto overflow-x-hidden">
-                <Table
-                  columns={columns}
-                  data={formattedDataMan}
-                  actions={(item) => (
-                    <div className="flex space-x-2">
-                      <CustomDialog
-                        triggerLabel={<FaCheck />}
-                        title="Detalhes da Manutenção"
-                        TypeButton="Finalizar"
-                        description="Veja os detalhes da manutenção selecionada!"
-                        fields={[
-                          {
-                            id: "maintenance_id",
-                            label: "ID da Manutenção",
-                            type: "text",
-                            defaultValue: "",
-                          },
-                          {
-                            id: "description",
-                            label: "Descrição",
-                            type: "text",
-                            defaultValue: "",
-                          },
-                          {
-                            id: "status",
-                            label: "Status",
-                            type: "select",
-                            defaultValue: "",
-                            options: statusOptions,
-                          },
-                          {
-                            id: "priority",
-                            label: "Prioridade",
-                            type: "select",
-                            defaultValue: "",
-                            options: PriorityOptions,
-                          },
-                          {
-                            id: "responsible",
-                            label: "Solicitante",
-                            type: "text",
-                            defaultValue: "",
-                          },
-                          {
-                            id: "date",
-                            label: "Data da manutenção",
-                            type: "date",
-                            defaultValue: "",
-                          },
-                          {
-                            id: "equip",
-                            label: "Equipe de manutenção",
-                            type: "select",
-                            defaultValue: "",
-                            options: EquipOptions,
-                          },
-                          {
-                            id: "items",
-                            label: "Materiais Utilizados",
-                            type: "text",
-                            defaultValue: "",
-                          },
-                          {
-                            id: "comments",
-                            label: "Comentários",
-                            type: "text",
-                            defaultValue: "",
-                          },
-                          
-                          {
-                            id: "performance_time",
-                            label: "Tempo de manutenção",
-                            type: "Time",
-                          },
-                        ]}
-                      />
-                      <CustomDialog
-                        triggerLabel={<FaEdit />}
-                        title="Detalhes da Manutenção"
-                        TypeButton="Salvar"
-                        description="Veja os detalhes da manutenção selecionada!"
-                        fields={[
-                          {
-                            id: "maintenance_id",
-                            label: "ID da Manutenção",
-                            type: "text",
-                            defaultValue: "",
-                          },
-                          {
-                            id: "description",
-                            label: "Descrição",
-                            type: "text",
-                            defaultValue: "",
-                          },
-                          {
-                            id: "status",
-                            label: "Status",
-                            type: "select",
-                            defaultValue: "",
-                            options: statusOptions,
-                          },
-                          {
-                            id: "priority",
-                            label: "Prioridade",
-                            type: "select",
-                            defaultValue: "",
-                            options: PriorityOptions,
-                          },
-                          {
-                            id: "responsible",
-                            label: "Solicitante",
-                            type: "text",
-                            defaultValue: "",
-                          },
-                          {
-                            id: "date",
-                            label: "Data da manutenção",
-                            type: "date",
-                            defaultValue: "",
-                          },
-                          {
-                            id: "equip",
-                            label: "Equipe de manutenção",
-                            type: "select",
-                            defaultValue: "",
-                            options: EquipOptions,
-                          },
-                        ]}
-                      />
-                      <CustomDialog
-                        triggerLabel={<FaTrash />}
-                        title="Detalhes da Manutenção"
-                        description="Veja os detalhes da manutenção selecionada!"
-                        TypeButton="Deletar"
-                        fields={[
-                          {
-                            id: "reasons",
-                            label: "Motivos da exclusão",
-                            type: "text",
-                            defaultValue: "",
-                          },
-                        ]}
-                      />
-                    </div>
-                  )}
-                />
-              </div>
+            <Table data={formattedDataMan} columns={columns} />
+            <div className="text-2xl font-bold text-foreground my-4">
+              Histórico de Manutenções
             </div>
-            <div className="rounded-md container mx-auto p-4 bg-background w-full">
-              <div className="text-2xl font-bold text-foreground mb-2">
-                <h1>Histórico</h1>
-              </div>
-              <div className="grid grid-cols-1 gap-2 max-h-80 w-full overflow-y-auto overflow-x-hidden">
-                <Table
-                  columns={columns}
-                  data={formattedDataHist}
-                  actions={(item) => (
-                    <div className="flex space-x-2">
-                      {" "}
-                      <CustomDialog
-                        triggerLabel={<FaEdit />}
-                        title="Detalhes da Manutenção"
-                        TypeButton="Salvar"
-                        description="Veja os detalhes da manutenção selecionada!"
-                        fields={[
-                          {
-                            id: "maintenance_id",
-                            label: "ID da Manutenção",
-                            type: "text",
-                            defaultValue: "",
-                          },
-                          {
-                            id: "description",
-                            label: "Descrição",
-                            type: "text",
-                            defaultValue: "",
-                          },
-                          {
-                            id: "status",
-                            label: "Status",
-                            type: "select",
-                            defaultValue: "",
-                            options: statusOptions,
-                          },
-                          {
-                            id: "priority",
-                            label: "Prioridade",
-                            type: "select",
-                            defaultValue: "",
-                            options: PriorityOptions,
-                          },
-                          {
-                            id: "responsible",
-                            label: "Solicitante",
-                            type: "text",
-                            defaultValue: "",
-                          },
-                          {
-                            id: "date",
-                            label: "Data da manutenção",
-                            type: "date",
-                            defaultValue: "",
-                          },
-                          {
-                            id: "equip",
-                            label: "Equipe de manutenção",
-                            type: "select",
-                            defaultValue: "",
-                            options: EquipOptions,
-                          },
-                          {
-                            id: "items",
-                            label: "Materiais Utilizados",
-                            type: "text",
-                            defaultValue: "",
-                          },
-                          {
-                            id: "comments",
-                            label: "Comentários",
-                            type: "text",
-                            defaultValue: "",
-                          },
-                        ]}
-                      />
-                      <CustomDialog
-                        triggerLabel={<FaTrash />}
-                        title="Detalhes da Manutenção"
-                        description="Veja os detalhes da manutenção selecionada!"
-                        TypeButton="Deletar"
-                        fields={[
-                          {
-                            id: "reasons",
-                            label: "Motivos da exclusão",
-                            type: "text",
-                            defaultValue: "",
-                          },
-                        ]}
-                      />
-                    </div>
-                  )}
-                />
-              </div>
-            </div>
-          </main>
-        </div>
-        <Footer />
+            <Table data={formattedDataHist} columns={columns} />
+          </div>
+        </main>
       </div>
+      <Footer />
+    </div>
   );
 }
