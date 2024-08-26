@@ -5,7 +5,6 @@ import { FaEdit, FaTrash } from "react-icons/fa";
 import Table from "@/app/components/table";
 import { CustomDialog } from "@/app/components/dialog";
 
-
 export default function MaquinasPage() {
   const columns = [
     { header: "Nome", accessor: "nome" },
@@ -93,8 +92,8 @@ export default function MaquinasPage() {
   ];
 
   const TypeOptions = [
-    { value: "maquina", label: "Máquina" },
-    { value: "peca", label: "Peça" },
+    { value: "maquinas", label: "Máquinas" },
+    { value: "pecas", label: "Peças" },
   ];
 
   return (
