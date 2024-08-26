@@ -6,7 +6,7 @@ import Table from "../components/table";
 import { CustomDialog } from "../components/dialog";
 
 // Função para gerar valores aleatórios
-function getRandomValue(array:any) {
+function getRandomValue(array: any) {
   return array[Math.floor(Math.random() * array.length)];
 }
 
@@ -86,7 +86,7 @@ export default function AmbientesPage() {
         <main className="flex-1 flex flex-col p-6 bg-background">
           <header className="text-left p-4 rounded-md mb-6 flex justify-between">
             <h1 className="text-4xl font-bold uppercase text-foreground">
-              Ambientes
+              Ambientes do Verdão
             </h1>
           </header>
 
@@ -130,7 +130,11 @@ export default function AmbientesPage() {
                             label: "Tipo de Ambiente",
                             type: "text",
                           },
-                          { id: "localizacao", label: "Localização", type: "text" },
+                          {
+                            id: "localizacao",
+                            label: "Localização",
+                            type: "text",
+                          },
                           {
                             id: "condicao_ambiente",
                             label: "Condição do ambiente",
