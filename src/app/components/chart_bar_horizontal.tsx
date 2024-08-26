@@ -9,32 +9,33 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { ChartConfig, ChartContainer } from "@/components/ui/chart";
+
 const chartData = [
-  { equipes: "equipe_a", manutencoes: 275, fill: "hsl(var(--foreground))" },
-  { equipes: "equipe_b", manutencoes: 200, fill: "hsl(var(--foreground))" },
-  { equipes: "equipe_c", manutencoes: 187, fill: "hsl(var(--foreground))" },
-  { equipes: "equipe_d", manutencoes: 173, fill: "hsl(var(--foreground))" },
-  { equipes: "equipe_e", manutencoes: 90, fill: "hsl(var(--foreground))" },
+  { equipes: "academia", manutencoes: 275, fill: "hsl(var(--foreground))" },
+  { equipes: "allianz", manutencoes: 200, fill: "hsl(var(--foreground))" },
+  { equipes: "parque", manutencoes: 187, fill: "hsl(var(--foreground))" },
+  { equipes: "jogadores", manutencoes: 173, fill: "hsl(var(--foreground))" },
+  { equipes: "comissao", manutencoes: 90, fill: "hsl(var(--foreground))" },
 ];
 
 const chartConfig = {
   manutencoes: {
     label: "manutenções realizadas",
   },
-  equipe_a: {
-    label: "Equipe A",
+  academia: {
+    label: "Academia de Futebol",
   },
-  equipe_b: {
-    label: "Equipe B",
+  allianz: {
+    label: "Allianz Parque",
   },
-  equipe_c: {
-    label: "Equipe C",
+  parque: {
+    label: "Parque Antártica",
   },
-  equipe_d: {
-    label: "Equipe D",
+  jogadores: {
+    label: "Jogadores",
   },
-  equipe_e: {
-    label: "Equipe E",
+  comissao: {
+    label: "Comissão Técnica",
   },
 } satisfies ChartConfig;
 
@@ -62,25 +63,33 @@ export function ChartBarComponent() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Relatório de manutenções</CardTitle>
-        <CardDescription>Realizados por cada Equipe</CardDescription>
+        <CardTitle>Relatório de Manutenções</CardTitle>
+        <CardDescription>
+          Realizados por cada Setor do Palmeiras
+        </CardDescription>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig}>
           <BarChart
+            width={500}
+            height={300}
             accessibilityLayer
             data={chartData}
             layout="vertical"
             margin={{
-              left: 0,
+              top: 20,
+              right: 30,
+              left: 80,
+              bottom: 20,
             }}
           >
             <YAxis
               dataKey="equipes"
               type="category"
               tickLine={false}
-              tickMargin={10}
+              tickMargin={15}
               axisLine={false}
+              width={150}
               tickFormatter={(value) =>
                 chartConfig[value as keyof typeof chartConfig]?.label
               }
