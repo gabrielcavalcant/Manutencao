@@ -13,28 +13,28 @@ export default function Home() {
       id: 1,
       color: "border bg-background",
       title: "",
-      text: "Ambientes",
+      text: "Allianz Parque",
       icon: <FaBuilding size={48} />,
     },
     {
       id: 2,
       color: "border bg-background",
       title: "",
-      text: "Equipamentos",
+      text: "Academia de Futebol",
       icon: <MdDashboard size={48} />,
     },
     {
       id: 3,
       color: "border bg-background",
       title: "",
-      text: "O.S. Alertas",
+      text: "Títulos Conquistados",
       icon: <MdForklift size={48} />,
     },
     {
       id: 4,
       color: "border bg-background",
       title: "",
-      text: "O.S. Concluidas",
+      text: "Manutenções Concluídas",
       icon: <FaTools size={48} />,
     },
   ];
@@ -46,7 +46,7 @@ export default function Home() {
         <main className="flex-1 flex flex-col p-6 bg-background">
           <header className="text-left p-4 rounded-md mb-6 flex justify-between">
             <h1 className="text-4xl font-bold uppercase text-foreground">
-              Sistema de Gestão de Manutenção
+              Gestão de Manutenção do Verdão
             </h1>
           </header>
 
@@ -54,7 +54,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {cards.map((props) => (
                 <Card
-                  key={props.id} // Adicionei a key aqui
+                  key={props.id}
                   color={props.color}
                   title={props.title}
                   text={props.text}
