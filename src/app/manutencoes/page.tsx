@@ -239,7 +239,7 @@ export default function ManutencaoPage() {
         <main className="flex-1 flex flex-col p-6 bg-background w-full">
           <div className="flex items-center justify-between p-4 rounded-md mb-6">
             <h1 className="text-4xl font-bold uppercase text-foreground">
-              Manutenções
+              Manutenções do Verdão
             </h1>
           </div>
           <div className="rounded-md container mx-auto p-4 bg-background w-full">
