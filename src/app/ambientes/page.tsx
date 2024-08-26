@@ -6,7 +6,7 @@ import Table from "../components/table";
 import { CustomDialog } from "../components/dialog";
 
 // Função para gerar valores aleatórios
-function getRandomValue(array) {
+function getRandomValue(array:any) {
   return array[Math.floor(Math.random() * array.length)];
 }
 
@@ -36,27 +36,27 @@ export default function AmbientesPage() {
   ];
 
   const nomesAmbientes = [
-    "Sala de Controle Principal",
-    "Laboratório de Testes",
-    "Oficina de Manutenção",
-    "Sala de Reuniões",
-    "Centro de Operações",
-    "Depósito de Equipamentos",
-    "Área de Pesquisa",
-    "Estação de Trabalho",
-    "Auditório",
-    "Biblioteca Técnica",
+    "Allianz Parque",
+    "Academia de Futebol",
+    "Sala de Troféus",
+    "Departamento Médico",
+    "Centro de Mídia",
+    "Centro de Treinamento",
+    "Estádio Palestra Itália",
+    "Museu Palmeiras",
+    "Auditório Palestra",
+    "Biblioteca Esportiva",
   ];
 
   const tiposAmbientes = [
-    "Sala automação",
-    "Laboratório",
-    "Oficina",
-    "Sala de reunião",
-    "Centro de operações",
-    "Depósito",
-    "Área de pesquisa",
-    "Estação de trabalho",
+    "Estádio",
+    "Centro de Treinamento",
+    "Sala de Exposição",
+    "Departamento Médico",
+    "Centro de Mídia",
+    "Centro de Treinamento",
+    "Estádio",
+    "Museu",
     "Auditório",
     "Biblioteca",
   ];
